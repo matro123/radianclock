@@ -36,8 +36,6 @@
     transform-origin: 50% 100%;
     width: 2.3%;
     border-radius: 5px;
-    animation: rotate 43200s infinite linear;
-    transform: rotate(90deg);
 }
 
 .minutes {
@@ -49,8 +47,6 @@
     transform-origin: 50% 100%;
     width: 1.8%;
     border-radius: 5px;
-    animation: rotate 3600s infinite linear;
-    transform: rotate(90deg);
 }
 .secondes {
     background: #707070;
@@ -62,7 +58,17 @@
     width: 1%;
     z-index: 8;
     border-radius: 5px;
+}
+divHeures{
     animation: rotate 60s infinite linear;
+    transform: rotate(90deg);
+}
+.divMinutes{
+    animation: rotate 3600s infinite linear;
+    transform: rotate(90deg);
+}
+.divSecondes{
+    animation: rotate 43200s infinite linear;
     transform: rotate(90deg);
 }
 

@@ -13,9 +13,9 @@ function gettime() {
     let angleHours = 90 + (hours * 30) + (minutes / 2);
     let angleMinutes = 90 + (minutes * 6);
 
-    let aiguilleSecondes = document.querySelector(".secondes");
-    let aiguilleMinutes = document.querySelector(".minutes");
-    let aiguilleHeures = document.querySelector(".heures");
+    let aiguilleSecondes = document.querySelector(".divSecondes");
+    let aiguilleMinutes = document.querySelector(".divMinutes");
+    let aiguilleHeures = document.querySelector(".divHeures");
 
     aiguilleSecondes.style.transform = "rotate(" + angleSeconds + "deg)";
     aiguilleMinutes.style.transform = "rotate(" + angleMinutes + "deg)";
