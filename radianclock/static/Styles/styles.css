@@ -1,3 +1,9 @@
+.divClock{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 .clock {
     border-radius: 50%;
     background: #fff url(../Img/rdclock.svg) no-repeat center;
