@@ -3,11 +3,21 @@
 <head>
     <title>Radian Clock</title>
     <meta charset="utf-8">
-    <link href="{{ url_for('static', filename='./Styles/styles.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='Styles/styles.css') }}" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
-
-<script src="{{ url_for('static', filename='./Script/script.js') }}"></script>
+    <article class="clock">
+        <div class="divHeures">
+          <div class="heures"></div>
+        </div>
+        <div class="divMinutes">
+          <div class="minutes"></div>
+        </div>
+        <div class="divSecondes">
+          <div class="secondes"></div>
+        </div>
+      </article>
+<script src="{{ url_for('static', filename='Script/script.js') }}"></script>
 </body>
 </html>
