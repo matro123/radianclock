@@ -9,9 +9,12 @@ function gettime() {
     let hours = date.getHours();
     console.log(hours);
 
-    let angleSeconds = 90 + (seconds * 6);
-    let angleHours = 90 + (hours * 30) + (minutes / 2);
-    let angleMinutes = 90 + (minutes * 6);
+    let angleSeconds = 90 - (seconds * 6);
+    console.log(angleSeconds);
+    let angleHours = 90 - (hours * 30) + (minutes / 2);
+    console.log(angleHours);
+    let angleMinutes = 90 - (minutes * 6);
+    console.log(angleMinutes);
 
     let aiguilleSecondes = document.querySelector(".divSecondes");
     let aiguilleMinutes = document.querySelector(".divMinutes");
