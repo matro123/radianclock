@@ -15,9 +15,9 @@ function timeloop() {
     let rotatesHours = (((hours / 12)*360)* (Math.PI / 180) + (3 * Math.PI / 2));
 
 
-    aiguilleH.style.transform = "translateY(-10vh) rotate(-" + rotatesHours + "rad)";
-    aiguilleSec.style.transform = "translateY(-15vh) rotate(-" + rotateSeconds + "rad)";
-    aiguilleMin.style.transform = "translateY(-14vh) rotate(-" + rotateMinutes + "rad)";
+    aiguilleH.style.transform = "translateY(-3em) rotate(-" + rotatesHours + "rad)";
+    aiguilleMin.style.transform = "translateY(-4em) rotate(-" + rotateMinutes + "rad)";
+    aiguilleSec.style.transform = "translateY(-4.5em) rotate(-" + rotateSeconds + "rad)";
 
 }
 

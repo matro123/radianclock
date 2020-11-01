@@ -9,14 +9,14 @@ body{
 }
 
 .divClock {
-    width: 70vh;
-    height: 70vh;
+    width: 20em;
+    height: 20em;
     background-color: rgb(250, 250, 250);
-    padding: 3vh;
+    padding: 1em;
     border-radius: 100%;
     background: #f0f3f5;
-    box-shadow:  16px 16px 87px #c2c5c6, 
-                 -16px -16px 87px #ffffff;
+    box-shadow:  1em 1em 5em #c2c5c6, 
+                 -1em -1em 5em #ffffff;
     
 }
 .clock {
@@ -31,35 +31,35 @@ body{
 }
 
 .aiguilleH{
-    width: 2vh;
-    height: 20vh;
+    width: 0.6em;
+    height: 6em;
     background-color: #003263;
-    transform: translateY(-10vh) rotate(90deg);
+    transform: translateY(-3em) rotate(90deg);
     position: absolute;
-    border-radius: 10vh;
+    border-radius: 4em;
     transform-origin: bottom;
 }
 .aiguilleMin{
-    width: 1.3vh;
-    height: 28vh;
+    width: 0.4em;
+    height: 8em;
     background-color: #0154A4;
-    transform: translateY(-14vh) rotate(90deg);
+    transform: translateY(-4em) rotate(90deg);
     position: absolute;
-    border-radius: 10vh;
+    border-radius: 4em;
     transform-origin: bottom;
 }
 .aiguilleSec{
-    width: 0.8vh;
-    height: 30vh;
+    width: 0.2em;
+    height: 9em;
     background-color: #D90429;
-    transform: translateY(-15vh) rotate(90deg);
+    transform: translateY(-4.5em) rotate(90deg);
     position: absolute;
-    border-radius: 10vh;
+    border-radius: 4em;
     transform-origin: bottom;
 }
 .dot{
-    width: 4vh;
-    height: 4vh;
+    width: 1.6em;
+    height: 1.6em;
     background-color: #3d3d3d;
     border-radius: 100%;
     z-index: 1;
