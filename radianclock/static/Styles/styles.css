@@ -1,95 +1,65 @@
-.divClock{
+body{
     display: flex;
-    align-content: center;
+    flex: 1;
+    height: 100vh;
     justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
+.divClock {
+    width: 70vh;
+    height: 70vh;
+    background-color: rgb(250, 250, 250);
+    padding: 3vh;
+    border-radius: 100%;
+    background: #f0f3f5;
+    box-shadow:  16px 16px 87px #c2c5c6, 
+                 -16px -16px 87px #ffffff;
+    
+}
 .clock {
-    border-radius: 50%;
-    background: #fff url(../Img/rdclock.svg) no-repeat center;
-    background-size: 88%;
-    height: 20em;
-    padding-bottom: 31%;
-    position: relative;
-    width: 20em;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img/radiantclock.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.clock.simple:after {
-    background: #000;
-    border-radius: 50%;
-    content: "";
+.aiguilleH{
+    width: 2vh;
+    height: 20vh;
+    background-color: #003263;
+    transform: translateY(-10vh) rotate(90deg);
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 5%;
-    height: 5%;
-    z-index: 10;
+    border-radius: 10vh;
+    transform-origin: bottom;
 }
-.divHeures, .divMinutes, .divSecondes {
+.aiguilleMin{
+    width: 1.3vh;
+    height: 28vh;
+    background-color: #0154A4;
+    transform: translateY(-14vh) rotate(90deg);
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    border-radius: 10vh;
+    transform-origin: bottom;
 }
-.heures {
-    background: #424242;
-    height: 8%;
-    left: 49%;
+.aiguilleSec{
+    width: 0.8vh;
+    height: 30vh;
+    background-color: #D90429;
+    transform: translateY(-15vh) rotate(90deg);
     position: absolute;
-    top: 42%;
-    transform-origin: 50% 100%;
-    width: 2.3%;
-    border-radius: 5px;
+    border-radius: 10vh;
+    transform-origin: bottom;
 }
-
-.minutes {
-    background: #5c5c5c;
-    height: 14%;
-    left: 49.2%;
-    position: absolute;
-    top: 36%;
-    transform-origin: 50% 100%;
-    width: 1.8%;
-    border-radius: 5px;
+.dot{
+    width: 4vh;
+    height: 4vh;
+    background-color: #3d3d3d;
+    border-radius: 100%;
+    z-index: 1;
 }
-.secondes {
-    background: #707070;
-    height: 16%;
-    left: 49.5%;
-    position: absolute;
-    top: 34%;
-    transform-origin: 50% 100%;
-    width: 1%;
-    z-index: 8;
-    border-radius: 5px;
-
-}
-divHeures{
-    animation: rotate 43200s infinite linear;
-    transform: rotate(90deg);
-}
-.divMinutes{
-    animation: rotate 3600s infinite linear;
-    transform: rotate(90deg);
-}
-.divSecondes{
-    animation: rotate 60s infinite linear;
-    transform: rotate(90deg);
-}
-.center{
-    width: 1em;
-    height: 1em;
-    border-radius: 20px;
-    top: 49%;
-    left: 48%;
-    background: #424242;
-    position: absolute;
-}
-
-@keyframes rotate {
-    100% {
-      transform: rotateZ(-360deg);
-    }
-  }

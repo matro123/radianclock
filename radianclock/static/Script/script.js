@@ -1,28 +1,24 @@
+const aiguilleH = document.querySelector('.aiguilleH');
+const aiguilleMin = document.querySelector('.aiguilleMin');
+const aiguilleSec = document.querySelector('.aiguilleSec');
 
-function gettime() {
 
-    let date = new Date;
-    let seconds = date.getSeconds();
-    console.log(seconds);
-    let minutes = date.getMinutes();
-    console.log(minutes);
-    let hours = date.getHours();
-    console.log(hours);
+function timeloop() {
+    const time = new Date();
 
-    let angleSeconds = 90 - (seconds * 6);
-    console.log(angleSeconds);
-    let angleHours = 90 - (hours * 30) + (minutes / 2);
-    console.log(angleHours);
-    let angleMinutes = 90 - (minutes * 6);
-    console.log(angleMinutes);
+    let seconds = time.getSeconds();
+    let minutes = time.getMinutes();
+    let hours = time.getHours() % 12 ;
 
-    let aiguilleSecondes = document.querySelector(".divSecondes");
-    let aiguilleMinutes = document.querySelector(".divMinutes");
-    let aiguilleHeures = document.querySelector(".divHeures");
+    let rotateSeconds = (((seconds / 60)*360) * (Math.PI / 180) + (3 * Math.PI / 2));
+    let rotateMinutes = (((minutes / 60)*360) * (Math.PI / 180) + (3 * Math.PI / 2));
+    let rotatesHours = (((hours / 12)*360)* (Math.PI / 180) + (3 * Math.PI / 2));
 
-    aiguilleSecondes.style.transform = "rotate(" + angleSeconds + "deg)";
-    aiguilleMinutes.style.transform = "rotate(" + angleMinutes + "deg)";
-    aiguilleHeures.style.transform = "rotate(" + angleHours + "deg)";
-    
-  }
-  gettime()
+
+    aiguilleH.style.transform = "translateY(-10vh) rotate(-" + rotatesHours + "rad)";
+    aiguilleSec.style.transform = "translateY(-15vh) rotate(-" + rotateSeconds + "rad)";
+    aiguilleMin.style.transform = "translateY(-14vh) rotate(-" + rotateMinutes + "rad)";
+
+}
+
+setInterval(timeloop, 1000);
